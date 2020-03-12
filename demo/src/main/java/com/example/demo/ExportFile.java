@@ -103,7 +103,7 @@ public class ExportFile {
 		
 		try {
 			@SuppressWarnings("resource")
-			FileWriter fileWriter=new FileWriter(new File(this.path+"/"+fileName));
+			FileWriter fileWriter=new FileWriter(new File(this.path+"/"+fileName+".csv"));
 			fileWriter.write(string);
 			fileWriter.flush();
 			fileWriter.close();
